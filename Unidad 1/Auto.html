@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Programa que determina el tipo de auto</title>
+<div>
+	<h1 style="background-color: rgb(240, 196, 182); color: darksalmon">Cordova Mireles Gael    4PRBM</h1>
+</div>
+</head>
+<body bgcolor="darksalmon">
+<meta charset="utf-8"> 
+<script type="text/javascript">
+	var diametro, grosor;
+	diametro=prompt("Digita el diametro de la rueda");
+	diametro=Number(diametro);
+	document.write('<h1 style="background-color: red">El diámetro de la rueda es de ' + diametro + ' metros</h1>');
+	if (diametro > 1.4) {
+		alert("La rueda es para un auto grande ")
+		document.write("<h2>La rueda es para un auto grande</h2> ")
+	} else if (diametro<=1.4 && diametro>0.8) {
+		alert("La rueda es para un auto mediano")
+		document.write("<h2>la rueda es para una auto mediano</h2>");
+	}else if (diametro<=0.8){
+		alert("la rueda es para una auto pequeño");
+		document.write("<h2>la rueda es para una auto pequeño</h2>");
+	}
+	grosor=prompt("Digita el grosor de la rueda");
+	grosor=Number(grosor);
+	document.write('<h1 style="background-color: red">El grosor de la rueda es de ' + grosor + ' metros</h1>');
+	if (diametro>1.4 && grosor<0.4) {
+		alert("El grosor para esta rueda es inferior al recomendado");
+		document.write("<h2>El grosor para esta rueda es inferior al recomendado</h2>");
+	}else if (diametro<=1.4 && diametro>0.8 && grosor<0.25) {
+		alert("El grosor para esta rueda es inferior al recomendado");
+		document.write("<h2>El grosor para esta rueda es inferior al recomendado</h2>");
+	}else{
+		alert("El grosor para esta rueda es el recomendado");
+		document.write("<h2>El grosor para esta rueda es el recomendado</h2>");
+	}
+</script>
+</body>
+</html>

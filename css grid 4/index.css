@@ -1,0 +1,26 @@
+.contenedor{
+    background-color: lightpink;
+    display: grid;
+
+    gap:10px ; /*atajo*/
+    padding: 10px;
+
+    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+}
+
+.elemento{
+    background-color: bisque;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: inset 3px 3px 3px white,
+                4px 4px 4px black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 40px;
+}
+
+
+

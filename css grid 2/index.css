@@ -1,0 +1,44 @@
+.contenedor{
+    background-color: lightpink;
+    display: grid;
+    gap:10px ; /*atajo*/
+    padding: 10px;
+
+    grid-template-areas:'s1 s1 s1 s1'
+                        's2 s3 s3 s4'
+                        's5 s5 s6 s6';
+}
+
+.elemento{
+    height: 50px;
+    
+    background-color: bisque;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: inset 3px 3px 3px white,
+                4px 4px 4px black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e1{
+    grid-area: s1;
+}
+.e2{
+    grid-area: s2;
+}
+.e3{
+    grid-area: s3;
+}
+.e4{
+    grid-area: s4;
+}
+.e5{
+    grid-area: s5;
+}
+.e6{
+    grid-area: s6;
+}
+

@@ -1,0 +1,16 @@
+*{
+    font-size: 14px;
+}
+.caja{
+    width: 32%;
+    padding: 1%;
+    border: 3px solid skyblue;
+    /* margin: 0.5em; */
+    box-sizing: border-box;
+    background-color: bisque;
+    margin-right: .5%;
+    float: left;
+}
+img{
+    width: 60%;
+}

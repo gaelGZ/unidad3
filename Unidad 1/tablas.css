@@ -1,0 +1,28 @@
+table{
+    margin: auto;
+    width: 600px;
+}
+caption{
+    font-size: 25px;
+    background-color: bisque;
+    color: red;
+}
+th{
+    background-color: salmon;
+    color: white;
+}
+/* tr{
+    background-color: beige;
+} */
+tbody tr:nth-child(odd){
+    background-color: aquamarine;
+}
+
+tfoot tr{
+    background-color:salmon;
+    color: white;
+    font-size: 20px;
+}
+td{
+    text-align: center;
+}

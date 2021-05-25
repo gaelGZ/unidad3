@@ -1,0 +1,16 @@
+html>
+<head>
+<title>Ejemplo estructura condicional IF si
+</title>
+<body bgcolor="cyan">
+<script type="text/javascript">
+var valor =Math.ceil((Math.random()*10));
+document.write("El valor sorteado es "+valor);
+if (valor<=5) {
+	document.write("<br><i>Es menor o igual a 5</i>");
+} else {
+	document.write("<br>Es mayor a 5");
+}
+</body>
+</head>
+</html>

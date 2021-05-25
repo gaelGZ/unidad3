@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --br:5px
+}
+body{
+    background-image: url(/fondo.jpg);
+    background-size: 1200px;
+    background-position: 87px -60px;
+    height: 620px; 
+}
+
+header{
+    position: relative;
+    background-color: rgb(255,255,255,0.3);
+    height: 40px;
+    border: 1px solid rgb(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-radius: var(--br);
+    margin: var(--br);
+}
+
+ul{
+    list-style: none;
+    margin: 10px;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    padding: 5px;
+    display: block;
+}
+
+nav a:hover{
+    cursor: pointer;
+    color: white;
+    border-radius: var(--br);
+    background-color: rgba(114,114,241);
+    box-shadow: 0 5px 10px 2px rgb(83, 83, 246, 0.6);
+}
+nav ul ul{
+    position: absolute;
+    
+    display: none;
+}
+
+nav > ul{
+    display: flex;
+    position: relative;
+}
+
+.n1{
+    line-height: 0.5em;
+}
+.n1 ul{
+    position: absolute;
+    top:30px;
+    left: 20px;
+}
+.n1:hover ul{
+    cursor: pointer;
+    display: block;
+    background-color: rgb(142, 142, 236,0.1);
+    border-radius: var(--br);
+    box-shadow: 0 5px 10px 2px rgb(83, 83, 246, 0.6); ;
+}
+
+.n1 ul li a{
+    color: gainsboro;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta lang="es">
+	<title>Determina el tipo de auto</title>
+</head>
+<body style="font-family: monospace;">
+	<h1><center>¿Qué tipo de auto es tu coche?</center></h1>
+	<script type="text/javascript">
+		let diam, gro;
+		alert('Bienvenido, ingresa los siguientes datos');
+		diam = Number(prompt('Ingresa el diámetro de la rueda (en metros)'));
+
+		document.write('<br><br><h3 style="background-color: orange">El diámetro de la rueda es de ' + diam + ' metros</h3>');
+
+		if(diam > 1.4){
+			alert('VEHÍCULO GRANDE');
+			document.write('<h2 style="background-color: lightblue"><center>La rueda es para un vehículo grande</center></h2>');
+		}else if(diam <= 1.4 && diam > 0.8){
+			alert('VEHÍCULO MEDIANO');
+			document.write('<h2 style="background-color: lightgray"><center>La rueda es para un vehículo mediano</center></h2>');
+		}else{
+			alert('VEHÍCULO PEQUEÑO');
+			document.write('<h2 style="background-color: aqua"><center>La rueda es para un vehículo pequeño</center></h2>');
+		}
+
+		gro = Number(prompt('Ingresa el grosor de la rueda (en metros)'));
+		document.write('<br><br><h3 style="background-color: chartreuse">El grosor de la rueda es de ' + gro + ' metros</h3>');
+
+		if(diam > 1.4 && gro < 0.4 || diam <= 1.4 && diam > 0.8 && gro < 0.25){
+			alert('GROSOR NO VÁLIDO');
+			document.write('<h2 style="background-color: red"><center>El grosor para esta rueda es inferior al recomendado</center></h2>');
+		}else{
+			alert('GROSOR VÁLIDO');
+			document.write('<h2 style="background-color: limegreen"><center>El grosor para esta rueda es igual al recomendado</center></h2>')
+		}
+	</script>
+</body>
+</html>

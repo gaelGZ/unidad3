@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .elemento{
+    width: 400px;
+    height: 400px;
+    background-color: skyblue;
+    margin: auto;
+    background-image: radial-gradient(circle at center,white,blue,yellow,green);
+} */
+body{
+    background-color: bisque;
+    margin: 10px;
+    min-height: 100vh;
+}
+.elemento{
+    border: 4px solid white;
+    width: 30%;
+    margin: auto;
+    position: relative;
+    box-shadow: 5px 5px 5px black; /*sombras*/
+    transition: all 2s; /*para que no sea brusca la transicion*/
+    transform: rotate(20deg);
+
+} 
+.elemento::before{
+    content: ""; /*sino se pone esta funcion no se vera nada de degradados*/
+    width: 100%;
+    height: 100%;
+    /* background-color: red;
+    opacity: 0.5; */
+
+    /* background-color: rgba(0,0,0,0.4); /*lo mismo el el otro pero ahora con rgba */
+
+    background: radial-gradient(rgba(255, 255, 255, 0.6), rgba(0,0,0,0.8));
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.elemento:hover{
+    cursor: pointer;
+    /* transform:scale(1.2); es para que se haga mas grande cuando pase el mouse*/
+    /* transform: rotate(20deg); rotar la imagen */
+    /* transform: skew(30deg); deformar la imagen */
+    /* transform: translate(10%,50px); para mover la imagen*/
+    transform: translate(10%,50px);
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+p{
+    font-size: 20px;
+    position: absolute; /*tomara como base la posicion del padre o sea el contenedor del borde*/
+    bottom: 7px;
+    left: 5px;
+    background-color: white;
+}

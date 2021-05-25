@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    background-color: skyblue;
+}
+
+.contenedor{
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:'s1 s1 s2'
+                        's1 s1 s3'
+                        's4 s5 s7'
+                        's4 s6 s8'
+                        's9 s9 s8'
+                        's9 s9 s10';
+    justify-content: center;
+}
+.i1:hover{
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.i2:hover{
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+.i3:hover{
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.i4:hover{
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+.i5:hover{
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.i6:hover{
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+.i7:hover{
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.i8:hover{
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+.i9:hover{
+    cursor: pointer;
+    transform: rotate(20deg);
+}
+.i10:hover{
+    cursor: pointer;
+    transform: rotate(-20deg);
+}
+.i1{
+   grid-area: s1;
+   transition: all 2s;
+   border: 5px solid white;
+}
+.i2{
+    grid-area: s2;
+    transition: all 2s;
+    border: 2px solid white;
+}
+.i3{
+    grid-area: s3;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i4{
+    grid-area: s4;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i5{
+    grid-area: s5;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i6{
+    grid-area: s6;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i7{
+    grid-area: s7;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i8{
+    grid-area: s8;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i9{
+    grid-area: s9;
+    transition: all 2s;
+    border: 5px solid white;
+}
+.i10{
+    grid-area: s10;
+    transition: all 2s;
+    border: 5px solid white;
+}

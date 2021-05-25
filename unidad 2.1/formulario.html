@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <h2>Manejo de formualarios</h2>
+    <div class="contenedor">
+    <fieldset id="principal">
+        <legend>REGISTRO DE AUTOMOVILES</legend>
+    <section id="uno">
+        <label for="marca">Marca:</label>
+        <input type="text" name="marca" id="marca" required><br><br>
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo" required><br><br>
+        <label for="fecha">Fecha de compra:</label>
+        <input type="date" name="fecha" id="fecha" required><br><br>
+        <label for="codigo">Codigo del auto:</label>
+        <input type="password" name="codigo" id="codigo"><br><br>
+        <label for="color">Color:</label>
+        <input type="color" name="color" id="color"><br><br>
+        <label for="seguro">Seguro</label>
+        <input type="text" List="asegura" id="seguro">
+            <datalist id="asegura">
+                <option value="Axxa">nO lo ubico x2</option>
+                <option value="Intejet">El que dicen en los partidos de fut</option>
+                <option value="GNP">Este si es muy conocido</option>
+                <option value="INBURSA">No lo ubico la vdd</option>
+            </datalist> <br><br>
+            <label for="precio">Precio:</label>
+            <input type="number" min="50000" max="500000" step="10000" name="precio" id="precio">
+    </section>        
+        <br><br>
+    <section id="dos">
+        <label for="imagen">Imagen:</label>
+        <input type="image" src="zayn.jpg" alt="auto" width="100" height="120" name="imagen" id="imagen"><br><br>
+       
+        <label for="descripcion">Describe tu auto:</label><br>
+        <textarea name="descripcion" id="descripcion" cols="30" rows="5"></textarea><br><br>
+
+        <label for="puertas">Numero de puertas:</label>
+        <select name="puertas" id="puertas" >
+            <option value="2">2 puertas</option>
+            <option value="4">4 puertas</option>
+            <option value="5">5 puertas</option>
+        </select><br><br>
+
+    </section>
+    
+    <section id="tres">
+        <fieldset>
+            <legend>Equipamiento del auto</legend>
+            <input type="checkbox" name="eq1" id="eq1">
+            <label for="eq1">Rines de aluminio</label><br>
+            <input type="checkbox" name="eq2" id="eq2">
+            <label for="eq2">Asientos de piel</label><br>
+            <input type="checkbox" name="eq3" id="eq3">
+            <label for="eq3">Pantalla de 12 pulgadas</label><br>
+            <input type="checkbox" name="eq4" id="eq4">
+            <label for="eq4">Faros de niebla</label>
+        </fieldset>
+    </section>
+
+    <section id="cuatro">
+        <fieldset>
+            <legend>Transmision</legend>
+            <input type="radio" name="tra" id="sta" value="Estandar">
+            <label for="sta">Estandar</label><br>
+            <input type="radio" name="tra" id="aute" value="Automatico">
+            <label for="aute">Automatico</label><br>
+            <input type="radio" name="tra" id="hib" value="Hibrido">
+            <label for="hib">Hibrido</label><br>
+        </fieldset>
+        <br>
+        
+    </fieldset>
+    </section> 
+</div>
+</body>
+</html>

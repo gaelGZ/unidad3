@@ -1,0 +1,35 @@
+.contenedor{
+    background-color: lightpink;
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 100px 100px 100px;
+
+    gap:10px ; /*atajo*/
+    padding: 10px;
+}
+
+.elemento{
+    background-color: bisque;
+    border-radius: 6px;
+    border: 1px solid white;
+    box-shadow: inset 3px 3px 3px white,
+                4px 4px 4px black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e1,.e5{  
+    grid-column: 1/span 3;
+}
+
+@media all and (max-width:500px){
+    .e2,.e3,.e4{
+        grid-column: 1/span 3;
+    }
+    .contenedor{
+    grid-template-rows: repeat(5,100px);
+    }
+}
+

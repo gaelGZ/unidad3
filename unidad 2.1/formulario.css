@@ -1,0 +1,41 @@
+.contenedor{
+    width: 730px;
+    height: 400px;
+}
+#uno{
+    background-color: bisque;
+    width: 300px;
+    height: 280px;
+    padding: 10px;
+    border: 2px solid red;
+}
+#dos{
+    background-color: bisque;
+    width: 300px;
+    height: 280px;
+    padding: 10px;
+    border: 2px solid red;
+    position: absolute;
+    bottom: 230px;
+    left: 400px;
+}
+#tres,#cuatro{
+    background-color: bisque;
+    width: 300px;
+    height: 120px;
+    padding: 10px;
+    border: 2px solid red;
+}
+#cuatro{
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+}
+legend{
+    background-color: salmon;
+    color: white;
+}
+#principal{
+    background-color: skyblue;
+    margin: auto;
+}
